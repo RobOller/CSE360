@@ -10,6 +10,7 @@ public class Calculator
 {
 
 	private int total;
+	private String history;
 	
 	/**
 	 * Description: Calculator constructor.
@@ -17,11 +18,12 @@ public class Calculator
 	public Calculator () 
 	{
 		total = 0;  // not needed - included for clarity
+		history = "0";
 	}
 	
 	/**
 	 * Description: To return the total.
-	 * @return 0
+	 * @return The total
 	 */
 	public int getTotal () 
 	{
@@ -29,35 +31,38 @@ public class Calculator
 	}
 	
 	/**
-	 * Description: To add the given input.
-	 * @param value
+	 * Description: To add the given input and record the history of the calculation.
+	 * @param Given value
 	 */
 	public void add (int value) 
 	{
 		total += value;
+		history += " + " + value;
 	}
 	
 	/**
-	 * Description: To subtract the given input.
-	 * @param value
+	 * Description: To subtract the given input and record the history of the calculation..
+	 * @param Given value
 	 */
 	public void subtract (int value) 
 	{
 		total -= value;
+		history += " - " + value;
 	}
 	
 	/**
-	 * Description: To multiply the given input.
-	 * @param value
+	 * Description: To multiply the given input and record the history of the calculation..
+	 * @param Given value
 	 */
 	public void multiply (int value) 
 	{
 		total *= value;
+		history += " * " + value;
 	}
 	
 	/**
-	 * Description: To divide the given input.
-	 * @param value
+	 * Description: To divide the given input and record the history of the calculation..
+	 * @param Given value
 	 */
 	public void divide (int value) 
 	{
@@ -69,6 +74,7 @@ public class Calculator
 		{
 			total /= value;
 		}
+		history += " / " + value;
 	}
 	
 	/**
@@ -77,6 +83,6 @@ public class Calculator
 	 */
 	public String getHistory () 
 	{
-		return "";
+		return history;
 	}
 }
