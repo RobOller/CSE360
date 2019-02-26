@@ -18,7 +18,7 @@ public class Calculator
 	public Calculator () 
 	{
 		total = 0;  // not needed - included for clarity
-		history = "0";
+		history = "0"; // Since the total starts at 0
 	}
 	
 	/**
@@ -31,7 +31,7 @@ public class Calculator
 	}
 	
 	/**
-	 * Description: To add the given input and record the history of the calculation.
+	 * Description: To add the given input by the total and record the history of the calculation.
 	 * @param Given value
 	 */
 	public void add (int value) 
@@ -41,7 +41,7 @@ public class Calculator
 	}
 	
 	/**
-	 * Description: To subtract the given input and record the history of the calculation..
+	 * Description: To subtract the given input by the total and record the history of the calculation..
 	 * @param Given value
 	 */
 	public void subtract (int value) 
@@ -51,7 +51,7 @@ public class Calculator
 	}
 	
 	/**
-	 * Description: To multiply the given input and record the history of the calculation..
+	 * Description: To multiply the given input by the total and record the history of the calculation..
 	 * @param Given value
 	 */
 	public void multiply (int value) 
@@ -61,7 +61,7 @@ public class Calculator
 	}
 	
 	/**
-	 * Description: To divide the given input and record the history of the calculation..
+	 * Description: To divide the total by the given input and record the history of the calculation..
 	 * @param Given value
 	 */
 	public void divide (int value) 
